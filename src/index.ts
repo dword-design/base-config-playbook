@@ -6,6 +6,7 @@ export default function () {
   const packageConfig = loadPkg.sync(this.cwd);
   return {
     allowedMatches: ['index.yml', 'templates'],
+    isLockFileFixCommitType: true,
     npmPublish: false,
     ...(!packageConfig.private && {
       deployPlugins: [
