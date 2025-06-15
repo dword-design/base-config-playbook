@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/dword-design/base-config-playbook/compare/v1.0.5...v1.0.6) (2025-06-15)
+
+
+### Bug Fixes
+
+* fix inventory ([b8a33c5](https://github.com/dword-design/base-config-playbook/commit/b8a33c5fb8e04c70b5f8973ccbf782897865ef90))
+
 ## [1.0.5](https://github.com/dword-design/base-config-playbook/compare/v1.0.4...v1.0.5) (2025-06-15)
 
 
