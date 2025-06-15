@@ -36,10 +36,12 @@ export default function () {
           run: 'ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts',
         },
         {
-          run: `"${endent`
+          run: endent`
+            cat <<EOF > .inventory
             [servers]
-            \${{ secrets.SERVER_IP }} ansible_user=\${{ secrets.SERVER_USER }} ansible_become=True}
-          `}" > .inventory`,
+            \${{ secrets.SERVER_IP }} ansible_user=\${{ secrets.SERVER_USER }} ansible_become=True
+            EOF
+          `,
         },
       ],
     }),
