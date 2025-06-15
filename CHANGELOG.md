@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/dword-design/base-config-playbook/compare/v1.0.4...v1.0.5) (2025-06-15)
+
+
+### Bug Fixes
+
+* lockfile fix commit type ([73527b5](https://github.com/dword-design/base-config-playbook/commit/73527b511695aae455b03eeb4aecc3537777ad0d))
+
 ## [1.0.4](https://github.com/dword-design/base-config-playbook/compare/v1.0.3...v1.0.4) (2025-06-15)
 
 
