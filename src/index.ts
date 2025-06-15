@@ -1,9 +1,9 @@
-import dedent from 'dedent';
 import packageName from 'depcheck-package-name';
+import endent from 'endent';
 import loadPkg from 'load-pkg';
 
-export default () => {
-  const packageConfig = loadPkg.sync();
+export default function () {
+  const packageConfig = loadPkg.sync(this.cwd);
   return {
     npmPublish: false,
     ...(!packageConfig.private && {
@@ -21,10 +21,10 @@ export default () => {
         },
         {
           name: 'Install ansible',
-          run: dedent`
-              python -m pip install --upgrade pip
-              pip install ansible
-            `,
+          run: endent`
+            python -m pip install --upgrade pip
+            pip install ansible
+          `,
         },
         {
           uses: 'webfactory/ssh-agent@v0.5.1',
@@ -32,12 +32,12 @@ export default () => {
         },
         { run: 'ssh-keyscan -H ${{ SERVER_IP }} >> ~/.ssh/known_hosts' },
         {
-          run: `"${dedent`
-              [servers]
-              \${{ secrets.SERVER_IP }} ansible_user=\${{ secrets.SERVER_USER }} ansible_become=True}
-            `}" > .inventory`,
+          run: `"${endent`
+            [servers]
+            \${{ secrets.SERVER_IP }} ansible_user=\${{ secrets.SERVER_USER }} ansible_become=True}
+          `}" > .inventory`,
         },
       ],
     }),
   };
-};
+}
