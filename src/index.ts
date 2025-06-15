@@ -31,7 +31,7 @@ export default function () {
           uses: 'webfactory/ssh-agent@v0.5.1',
           with: { 'ssh-private-key': '${{ secrets.SSH_PRIVATE_KEY }}' },
         },
-        { run: 'ssh-keyscan -H ${{ SERVER_IP }} >> ~/.ssh/known_hosts' },
+        { run: 'ssh-keyscan -H ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts' },
         {
           run: `"${endent`
             [servers]
