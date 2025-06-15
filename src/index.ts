@@ -5,7 +5,7 @@ import loadPkg from 'load-pkg';
 export default function () {
   const packageConfig = loadPkg.sync(this.cwd);
   return {
-    allowedMatches: ['templates'],
+    allowedMatches: ['index.yml', 'templates'],
     npmPublish: false,
     ...(!packageConfig.private && {
       deployPlugins: [
