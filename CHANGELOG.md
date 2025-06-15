@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/dword-design/base-config-playbook/compare/v1.0.1...v1.0.2) (2025-06-15)
+
+
+### Bug Fixes
+
+* allowed matches ([04bbf63](https://github.com/dword-design/base-config-playbook/commit/04bbf63cf7ae7f975658e52cc071a2ccc62e5be0))
+
 ## [1.0.1](https://github.com/dword-design/base-config-playbook/compare/v1.0.0...v1.0.1) (2025-06-15)
 
 
