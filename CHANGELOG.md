@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/dword-design/base-config-playbook/compare/v1.0.3...v1.0.4) (2025-06-15)
+
+
+### Bug Fixes
+
+* fix ([c34993a](https://github.com/dword-design/base-config-playbook/commit/c34993a8638aad6b86beb824cdea693157fc6a8f))
+
 ## [1.0.3](https://github.com/dword-design/base-config-playbook/compare/v1.0.2...v1.0.3) (2025-06-15)
 
 
