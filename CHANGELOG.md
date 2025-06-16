@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/dword-design/base-config-playbook/compare/v1.0.6...v1.1.0) (2025-06-16)
+
+
+### Features
+
+* requirements support ([7d56585](https://github.com/dword-design/base-config-playbook/commit/7d56585c86797d3b8467a117e5eb630915f8d367))
+
 ## [1.0.6](https://github.com/dword-design/base-config-playbook/compare/v1.0.5...v1.0.6) (2025-06-15)
 
 
