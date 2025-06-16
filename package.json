@@ -32,6 +32,7 @@
     "@semantic-release/exec": "^7.1.0",
     "depcheck-package-name": "^3.0.1",
     "endent": "npm:@dword-design/endent@^1.4.1",
+    "fs-extra": "^11.3.0",
     "load-pkg": "^4.0.0"
   },
   "devDependencies": {

@@ -1,11 +1,14 @@
+import pathLib from 'node:path';
+
 import packageName from 'depcheck-package-name';
 import endent from 'endent';
+import fs from 'fs-extra';
 import loadPkg from 'load-pkg';
 
 export default function () {
   const packageConfig = loadPkg.sync(this.cwd);
   return {
-    allowedMatches: ['index.yml', 'templates'],
+    allowedMatches: ['index.yml', 'requirements.yml', 'templates'],
     isLockFileFixCommitType: true,
     npmPublish: false,
     ...(!packageConfig.private && {
@@ -28,6 +31,14 @@ export default function () {
             pip install ansible
           `,
         },
+        ...(fs.existsSync(pathLib.join(this.cwd, 'requirements.yml'))
+          ? [
+              {
+                name: 'Install requirements',
+                run: 'ansible-galaxy install -r requirements.yml',
+              },
+            ]
+          : []),
         {
           uses: 'webfactory/ssh-agent@v0.5.1',
           with: { 'ssh-private-key': '${{ secrets.SSH_PRIVATE_KEY }}' },
