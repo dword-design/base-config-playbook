@@ -12,11 +12,5 @@
     },
     "skipLibCheck": true,
     "target": "ESNext"
-  },
-  "exclude": [
-    "**/*.spec.ts"
-  ],
-  "include": [
-    "src"
-  ]
+  }
 }
