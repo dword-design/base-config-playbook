@@ -12,8 +12,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0(semantic-release@22.0.12(typescript@5.8.3))
       depcheck-package-name:
-        specifier: ^3.0.1
-        version: 3.0.1
+        specifier: ^5.0.0
+        version: 5.0.0
       endent:
         specifier: npm:@dword-design/endent@^1.4.1
         version: '@dword-design/endent@1.4.1'
@@ -1489,6 +1489,10 @@ packages:
     resolution: {integrity: sha512-7rR+VPs0wZCOgAyNe4klyXc+93cXl62pQ4akwHcnQQypdqDC18cy3LNLXmgu8geb3on8pgcxOhfbQ66+yLaNoQ==}
     engines: {node: '>=14'}
 
+  depcheck-package-name@5.0.0:
+    resolution: {integrity: sha512-TmI3C6OMPmDoqNkv3pTUlSgfi2KoTpckBM98+p3bsCbES9OR7oHYCzgxm0QR6DdKSkrt/mFDNx8CKhCtbWRVag==}
+    engines: {node: '>=22'}
+
   deprecation@2.3.1:
     resolution: {integrity: sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==}
 
@@ -2039,6 +2043,7 @@ packages:
   git-raw-commits@2.0.11:
     resolution: {integrity: sha512-VnctFhw+xfj8Va1xtfEqCUD2XDrbAPSJx+hSrE5K7fGdjZruW7XV+QOrN7LF/RJyvspRiD2I0asWsxFp0ya26A==}
     engines: {node: '>=10'}
+    deprecated: This package is no longer maintained. For the JavaScript API, please use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-base@0.3.0:
@@ -5790,6 +5795,10 @@ snapshots:
   depcheck-detector-package-name@3.0.4: {}
 
   depcheck-package-name@3.0.1:
+    dependencies:
+      tagged-template-noop: 2.1.1
+
+  depcheck-package-name@5.0.0:
     dependencies:
       tagged-template-noop: 2.1.1
 
