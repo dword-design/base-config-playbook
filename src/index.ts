@@ -8,7 +8,12 @@ import loadPkg from 'load-pkg';
 export default function () {
   const packageConfig = loadPkg.sync(this.cwd);
   return {
-    allowedMatches: ['index.yml', 'requirements.yml', 'templates', 'roles/*/tasks/*.yml'],
+    allowedMatches: [
+      'index.yml',
+      'requirements.yml',
+      'templates',
+      'roles/*/tasks/*.yml',
+    ],
     isLockFileFixCommitType: true,
     npmPublish: false,
     ...(!packageConfig.private && {
