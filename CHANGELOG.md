@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/dword-design/base-config-playbook/compare/v1.1.0...v2.0.0) (2026-04-24)
+
+
+### Bug Fixes
+
+* add custom roles allowed matches ([914d951](https://github.com/dword-design/base-config-playbook/commit/914d951015d9b755ecbaa6acac64deb777fc5648))
+* lock file maintenance ([#16](https://github.com/dword-design/base-config-playbook/issues/16)) ([6a4c415](https://github.com/dword-design/base-config-playbook/commit/6a4c415dc90340a684690c6a3d16b7e36be03edb))
+
+
+### BREAKING CHANGES
+
+* node.js >= 22
+
 # [1.1.0](https://github.com/dword-design/base-config-playbook/compare/v1.0.6...v1.1.0) (2025-06-16)
 
 
