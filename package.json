@@ -8,10 +8,8 @@
   "type": "module",
   "exports": {
     ".": {
-      "import": {
-        "default": "./dist/index.js",
-        "types": "./dist/index.d.ts"
-      }
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "main": "dist/index.js",
@@ -19,6 +17,7 @@
     "dist"
   ],
   "scripts": {
+    "build": "base build",
     "checkUnknownFiles": "base checkUnknownFiles",
     "commit": "base commit",
     "depcheck": "base depcheck",
@@ -26,22 +25,25 @@
     "lint": "base lint",
     "prepare": "base prepare",
     "prepublishOnly": "base prepublishOnly",
-    "test": "base test"
+    "test": "base test",
+    "typecheck": "base typecheck",
+    "verify": "base verify"
   },
   "dependencies": {
+    "@dword-design/base": "^16.2.5",
     "@semantic-release/exec": "^7.1.0",
     "depcheck-package-name": "^5.0.0",
     "endent": "npm:@dword-design/endent@^1.4.7",
     "fs-extra": "^11.3.4",
-    "load-pkg": "^4.0.0"
+    "read-pkg": "^10.1.0"
   },
   "devDependencies": {
-    "@dword-design/base": "^16.2.5",
-    "@playwright/test": "^1.59.1"
+    "@playwright/test": "^1.59.1",
+    "@types/fs-extra": "^11.0.4"
   },
   "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "publishConfig": {
     "access": "public"

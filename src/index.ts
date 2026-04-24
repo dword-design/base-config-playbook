@@ -1,12 +1,13 @@
 import pathLib from 'node:path';
 
+import type { Base } from '@dword-design/base';
 import packageName from 'depcheck-package-name';
 import endent from 'endent';
 import fs from 'fs-extra';
-import loadPkg from 'load-pkg';
+import { readPackageSync } from 'read-pkg';
 
-export default function () {
-  const packageConfig = loadPkg.sync(this.cwd);
+export default function (this: Base) {
+  const packageConfig = readPackageSync({ cwd: this.cwd });
   return {
     allowedMatches: ['index.yml', 'requirements.yml', 'templates'],
     isLockFileFixCommitType: true,
