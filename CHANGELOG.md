@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/dword-design/base-config-playbook/compare/v2.0.0...v2.0.1) (2026-10-29)
+
+
+### Bug Fixes
+
+* pin python version ([5265d5a](https://github.com/dword-design/base-config-playbook/commit/5265d5a7859b4a7b38af46a27f4fdfa5c04b2e79))
+
 # [2.0.0](https://github.com/dword-design/base-config-playbook/compare/v1.1.0...v2.0.0) (2026-04-24)
 
 
