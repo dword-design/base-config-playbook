@@ -28,7 +28,7 @@ export default function (this: Base) {
         {
           name: 'Install Python',
           uses: 'actions/setup-python@v4',
-          with: { 'python-version': '3.x' },
+          with: { 'python-version': '3.13' },
         },
         {
           name: 'Install ansible',
